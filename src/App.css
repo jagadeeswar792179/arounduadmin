@@ -56,7 +56,6 @@ body {
   width: 70%;
   border-radius: 30px;
   box-shadow: var(--boxshadowmain);
-  align-items: center;
   height: 70vh;
 }
 .admin-pageup {
