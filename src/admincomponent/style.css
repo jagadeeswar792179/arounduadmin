@@ -1,0 +1,26 @@
+.switch-container {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.switch-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  color: var(--namehead);
+  border-radius: 25px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.switch-btn:hover {
+  background: #eee;
+}
+
+.switch-btn.active {
+  background: var(--namehead);
+  color: #ffffff;
+}

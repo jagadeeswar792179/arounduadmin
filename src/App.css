@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+:root {
+  --font-main: "Nunito", sans-serif;
+  --bcgcolor: #f8faff;
+  --namehead: #205b99;
+  --boxshadowmain: 0 8px 25px -10px rgba(32, 91, 153, 0.1);
+  --color-green: #74c47b;
+  --color-aqua: #33aac2;
+  --color-off-white: #f8faff;
+  --color-light-gray: #f0f4f8;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 1;
+  --tw-shadow: 0 0 #0000;
+}
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--bcgcolor);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.switch-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.switch-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  color: var(--namehead);
+  border-radius: 25px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.h2h2 {
+  color: var(--namehead);
+}
+.switch-btn:hover {
+  background: #eee;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.switch-btn.active {
+  background: var(--namehead);
+  color: #ffffff;
+}
+.admin-page {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  border-radius: 30px;
+  box-shadow: var(--boxshadowmain);
   align-items: center;
+  height: 70vh;
+}
+.admin-pageup {
+  width: 100%;
+  margin-top: 20px;
+  height: 100vh;
+  background-color: var(--bcgcolor);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.admin-table {
+  width: 80%;
+  border-collapse: collapse; /* IMPORTANT */
+  margin-top: 16px;
+  background: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd; /* CELL BORDERS */
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.admin-table tr:hover {
+  background-color: #f0f6ff;
 }
