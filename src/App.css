@@ -13,6 +13,7 @@
   --tw-text-opacity: 1;
   --tw-shadow: 0 0 #0000;
 }
+
 html,
 body {
   font-family: "Nunito", sans-serif;
@@ -64,7 +65,8 @@ body {
   height: 100vh;
   background-color: var(--bcgcolor);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .admin-table {
@@ -92,4 +94,29 @@ body {
 
 .admin-table tr:hover {
   background-color: #f0f6ff;
+}
+
+.logo-login p:nth-of-type(1) {
+  color: var(--namehead);
+  font-size: 60px;
+  margin: 0px;
+  font-weight: 800;
+}
+.logo-login span:nth-of-type(1) {
+  color: var(--color-green);
+  font-size: 70px;
+  margin: 0px;
+  font-weight: 800;
+}
+.logo-login p:nth-of-type(2) {
+  font-size: 25px;
+  margin: 0px;
+  font-weight: 500;
+  font-family: var(--font-main);
+  opacity: 0.6;
+}
+.logo-png {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }

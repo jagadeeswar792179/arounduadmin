@@ -10,6 +10,22 @@ export default function AdminPage() {
 
   return (
     <div className="admin-pageup">
+      <div
+        className="logo-login"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "10px",
+          marginTop: "10px",
+        }}
+      >
+        <img className="logo-png" src="logo.png" />
+        <p>
+          Around
+          <span>U</span>
+        </p>
+      </div>
       <div className="admin-page">
         <h2 className="h2h2">Admin Dashboard</h2>
         <AdminSwitch tab={tab} setTab={setTab} />
